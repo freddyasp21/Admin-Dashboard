@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>CSS GRID DASHBOARD</title>
+    <title>DASHBOARD</title>
   </head>
   <body id="body">
     <div class="container">
@@ -19,19 +19,36 @@
           <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
         <div class="navbar__left">
-          <a href="#">Subscribers</a>
-          <a href="#">Video Management</a>
-          <a class="active_link" href="#">Admin</a>
+          <a href="#" class="nav_left_link">Subscribers</a>
+          <a href="#" class="nav_left_link">Video Management</a>
+          <a class="active_link nav_left_link" href="#">Admin</a>
         </div>
         <div class="navbar__right">
-          <a href="#">
-            <i class="fa fa-search" aria-hidden="true"></i>
+          <a href="#" class="notification__box">
+            <span class="notification__number">10</span>
+            <i class="fa fa-bell" aria-hidden="true" id="active__bell"></i>
+            <div class="notification__dropdown">
+              <ul class="notification__dropdownList">
+                <li class="notification__dropdownItem">
+                  <a href="#" class="notification__dropdownLink"><i class="fa-solid fa-exclamation"></i> Ticket abierto <span>#015405</span></span_></a>
+                </li>
+                <li class="notification__dropdownItem">
+                   <a href="#" class="notification__dropdownLink"><i class="fa-solid fa-exclamation"></i> Ticket abierto <span>#015405</span></span_></a>
+                </li>
+                <li class="notification__dropdownItem">
+                   <a href="#" class="notification__dropdownLink"><i class="fa-solid fa-exclamation"></i> Ticket abierto <span>#015405</span></span_></a>
+                </li>
+                <li class="notification__dropdownItem">
+                   <a href="#" class="notification__dropdownLink"><i class="fa-solid fa-exclamation"></i> Ticket abierto <span>#015405</span></span_></a>
+                </li>
+                <li class="notification__dropdownItem notification__dropdownSeeMore">
+                  <a href="#" class="notification__dropdownLink">Ver más</a>
+                </li>
+              </ul>
+            </div>
           </a>
           <a href="#">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-          </a>
-          <a href="#">
-            <img width="30" src="assets/avatar.svg" alt="" />
+            <img width="30" src="assets/apoyo.png" alt="" />
             <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
           </a>
         </div>
@@ -44,8 +61,8 @@
           <div class="main__title">
             <img src="assets/hello.svg" alt="" />
             <div class="main__greeting">
-              <h1>Hello Codersbite</h1>
-              <p>Welcome to your admin dashboard</p>
+              <h1>Bienvenido...</h1>
+              <p>Bienvenido al Panel Administrativo</p>
             </div>
           </div>
 
@@ -143,13 +160,181 @@
           </div>
           <!-- CHARTS ENDS HERE -->
         </div>
+
+        <!-- RECENTS STARTS HERE -->
+        <section class="recent">
+          <div class="activity-grid">
+            <h3 class="activity-title">Recent activity</h3>
+            <p class="activity-subTitle">Cupertino, California, USA</p>
+            <div class="activity-card">
+              <table class="table">
+                <thead class="table-head">
+                  <tr class="table-row">
+                    <th>Completo</th>
+                    <th>Ticket</th>
+                    <th>Descripción</th>
+                    <th>Estatus</th>
+                    <th>Acción</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr class="table-body-row">
+                    <td>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="checkboxNoLabel1"
+                        value=""
+                        aria-label="..."
+                      />
+                    </td>
+                    <td>#015405</td>
+                    <td>Lorem, ipsum dolor sit amet consect</td>
+                    <td>
+                      <span class="badge success">Success</span>
+                    </td>
+                    <td>
+                      <select name="select" class="btn-action">
+                        <option value="value1">Value 1</option>
+                        <option value="value2">Value 2</option>
+                        <option value="value3">Value 3</option>
+                      </select>
+                    </td>
+                  </tr>
+
+                  <tr class="table-body-row">
+                    <td>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="checkboxNoLabel1"
+                        value=""
+                        aria-label="..."
+                      />
+                    </td>
+                    <td>#015405</td>
+                    <td>Lorem, ipsum dolor sit amet consect</td>
+                    <td>
+                      <span class="badge warning">Success</span>
+                    </td>
+                    <td>
+                      <select name="select" class="btn-action">
+                        <option value="value1">Value 1</option>
+                        <option value="value2">Value 2</option>
+                        <option value="value3">Value 3</option>
+                      </select>
+                    </td>
+                  </tr>
+
+                  <tr class="table-body-row">
+                    <td>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="checkboxNoLabel1"
+                        value=""
+                        aria-label="..."
+                      />
+                    </td>
+                    <td>#015405</td>
+                    <td>Lorem, ipsum dolor sit amet consect</td>
+                    <td>
+                      <span class="badge danger">Danger</span>
+                    </td>
+                    <td>
+                      <select name="select" class="btn-action">
+                        <option value="value1">Value 1</option>
+                        <option value="value2">Value 2</option>
+                        <option value="value3">Value 3</option>
+                      </select>
+                    </td>
+                  </tr>
+
+                  <tr class="table-body-row">
+                    <td>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="checkboxNoLabel1"
+                        value=""
+                        aria-label="..."
+                      />
+                    </td>
+                    <td>#015405</td>
+                    <td>Lorem, ipsum dolor sit amet consect</td>
+                    <td>
+                      <span class="badge neutral">Neutral</span>
+                    </td>
+                    <td>
+                      <select name="select" class="btn-action">
+                        <option value="value1">Value 1</option>
+                        <option value="value2">Value 2</option>
+                        <option value="value3">Value 3</option>
+                      </select>
+                    </td>
+                  </tr>
+
+                  <tr class="table-body-row">
+                    <td>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="checkboxNoLabel1"
+                        value=""
+                        aria-label="..."
+                      />
+                    </td>
+                    <td>#015405</td>
+                    <td>Lorem, ipsum dolor sit amet consect</td>
+                    <td>
+                      <span class="badge success">Success</span>
+                    </td>
+                    <td>
+                      <select name="select" class="btn-action">
+                        <option value="value1">Value 1</option>
+                        <option value="value2">Value 2</option>
+                        <option value="value3">Value 3</option>
+                      </select>
+                    </td>
+                  </tr>
+
+                  <tr class="table-body-row">
+                    <td>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="checkboxNoLabel1"
+                        value=""
+                        aria-label="..."
+                      />
+                    </td>
+                    <td>#015405</td>
+                    <td>Lorem, ipsum dolor sit amet consect</td>
+                    <td>
+                      <span class="badge success">Success</span>
+                    </td>
+                    <td>
+                      <select name="select" class="btn-action">
+                        <option value="value1">Value 1</option>
+                        <option value="value2">Value 2</option>
+                        <option value="value3">Value 3</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- RECENT ENDS HERE -->
       </main>
 
       <div id="sidebar">
         <div class="sidebar__title">
           <div class="sidebar__img">
-            <img src="assets/logo.png" alt="logo" />
-            <h1>Codersbite</h1>
+            <img src="assets/apoyo.png" alt="logo" class="logo" />
+            <h1>Aduana</h1>
           </div>
           <i
             onclick="closeSidebar()"
@@ -218,6 +403,10 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/8fc3a1f56a.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="script.js"></script>
   </body>
